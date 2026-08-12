@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p \"C:\\\\Users\\\\angel\\\\Downloads\\\\SolveTech-master\\\\SolveTech-master\\\\.claude\")",
+      "Bash(powershell -Command \"Stop-Process -Id 10212 -Force\")",
+      "Bash(taskkill //F //PID 10212)"
+    ]
+  }
+}

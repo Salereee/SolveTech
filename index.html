@@ -1,15 +1,15 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="SolveTech: desarrollo web, hosting, dominios, SEO y Google Ads con enfoque en conversiones.">
-  <title>SolveTech</title>
+  <title>SolveTech - Desarrollo Web Profesional</title>
   <link rel="icon" href="LogoTransparentecClaro.ico" type="image/x-icon">
   <link rel="preload" href="styles.css" as="style">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" media="all">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" media="all">
 </head>
 <body>
   <nav class="navbar" role="navigation" aria-label="Menu principal">
@@ -20,9 +20,9 @@
       <ul class="nav-links">
         <li><a href="#inicio">Inicio</a></li>
         <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#portafolio">Portafolio</a></li>
         <li><a href="#precios">Planes</a></li>
         <li><a href="#contacto">Contacto</a></li>
+        <li><a href="https://wa.me/526641649998" class="btn primary small nav-cta" target="_blank" rel="noopener">Agenda una llamada</a></li>
       </ul>
       <button class="menu-toggle" aria-label="Abrir menu">
         <i class="fas fa-bars"></i>
@@ -30,31 +30,25 @@
     </div>
   </nav>
 
-  <section id="inicio" class="hero section-full">
-    <div class="container hero-grid">
-      <div class="hero-copy animate">
-        <h1>Webs r&aacute;pidas, seguras y listas para vender.</h1>
-        <p>Dise&ntilde;amos y desarrollamos sitios que cargan en segundos, posicionan en buscadores y conectan con tus clientes desde el primer clic.</p>
-        <div class="hero-actions">
-          <a class="btn primary" href="#contacto">Agenda una llamada</a>
-          <a class="btn ghost" href="#portafolio">Ver portafolio</a>
-        </div>
-
+  <section id="inicio" class="hero">
+    <div class="hero-art" aria-hidden="true"></div>
+    <div class="container hero-copy animate">
+      <p class="eyebrow">Agencia web en Tijuana</p>
+      <h1>Webs r&aacute;pidas, seguras y listas para <span class="accent-word">vender</span>.</h1>
+      <p class="lead-text">Dise&ntilde;amos y desarrollamos sitios que cargan en segundos, posicionan en buscadores y conectan con tus clientes desde el primer clic.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#contacto">Agenda una llamada</a>
+        <a class="btn ghost" href="#precios">Ver planes</a>
       </div>
-      <div class="hero-card animate" data-delay="80">
-        <p class="eyebrow">Plan de lanzamiento</p>
-        <h3>Diagn&oacute;stico express en 48h</h3>
-        <p>Auditamos tu presencia digital, definimos un plan de p&aacute;ginas, integraciones y pauta para lanzar sin fricci&oacute;n.</p>
-        <div class="stats">
-          <div class="stat"><span>30+</span>Proyectos entregados</div>
-          <div class="stat"><span>1.2s</span>Carga inicial promedio</div>
-          <div class="stat"><span>24/7</span>Soporte y monitoreo</div>
-        </div>
+      <div class="hero-tags">
+        <span><i class="fas fa-bolt"></i> Carga en segundos</span>
+        <span><i class="fas fa-lock"></i> Hosting y SSL incluidos</span>
+        <span><i class="fas fa-magnifying-glass-chart"></i> SEO desde el dia uno</span>
       </div>
     </div>
   </section>
 
-  <section id="servicios" class="section services section-full">
+  <section id="servicios" class="section services">
     <div class="container">
       <div class="section-head animate">
         <p class="eyebrow">Qu&eacute; hacemos</p>
@@ -96,40 +90,7 @@
     </div>
   </section>
 
-  <section id="portafolio" class="section portfolio section-full">
-    <div class="container">
-      <div class="section-head animate">
-        <p class="eyebrow">Casos</p>
-        <h2>Trabajos recientes</h2>
-        <p class="lead">Sitios ligeros, mensajes directos y llamados a la acci&oacute;n visibles desde el primer scroll.</p>
-      </div>
-      <div class="portfolio-grid">
-        <article class="portfolio-item animate">
-          <div class="portfolio-icon"><i class="fas fa-truck"></i></div>
-          <h3>Gruas Zanca</h3>
-          <p>Asistencia vial r&aacute;pida y confiable en Tijuana con CTA directo a WhatsApp.</p>
-          <div class="tags"><span>Servicios</span><span>Landing</span></div>
-          <a href="https://gruaselzanca.com/" class="btn ghost" target="_blank" rel="noopener">Ver proyecto <i class="fas fa-external-link-alt"></i></a>
-        </article>
-        <article class="portfolio-item animate" data-delay="80">
-          <div class="portfolio-icon"><i class="fas fa-video"></i></div>
-          <h3>SysIT</h3>
-          <p>Soluciones de videovigilancia con secci&oacute;n de paquetes por cartas de productos a Whatsapp y contacto inmediato.</p>
-          <div class="tags"><span>Negocio</span><span>Landing</span></div>
-          <a href="https://sysitseguridad.com.mx/" class="btn ghost" target="_blank" rel="noopener">Ver proyecto <i class="fas fa-external-link-alt"></i></a>
-        </article>
-        <article class="portfolio-item animate" data-delay="80">
-          <div class="portfolio-icon"><i class="fas fa-shop"></i></div>
-          <h3>Bazariin Layla</h3>
-          <p>Bazar local de ropa con CTA directo a WhatsApp y integracion de reviews de facebook.</p>
-          <div class="tags"><span>Negocio</span><span>Landing</span></div>
-          <a href="https://bazariinlayla.com.mx/" class="btn ghost" target="_blank" rel="noopener">Ver proyecto <i class="fas fa-external-link-alt"></i></a>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="precios" class="section pricing section-full">
+  <section id="precios" class="section pricing">
     <div class="container">
       <div class="section-head animate">
         <p class="eyebrow">Planes</p>
@@ -138,7 +99,7 @@
       </div>
       <div class="pricing-grid">
         <article class="pricing-card animate">
-          <div class="pill muted">Mejor para lanzar</div>
+          <p class="card-label">Mejor para lanzar</p>
           <h3><i class="fas fa-rocket"></i> Presencia digital</h3>
           <p class="price">Desde &#36;3000 MXN</p>
           <p class="desc">Ideal para emprendedores que quieren salir r&aacute;pido con buena imagen.</p>
@@ -150,9 +111,10 @@
             <li><i class="fas fa-lock"></i> SSL y seguridad</li>
             <li><i class="fas fa-map-marker-alt"></i> Google Maps</li>
           </ul>
+          <a href="https://wa.me/526641649998?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20plan%20Presencia%20digital" class="btn ghost full" target="_blank" rel="noopener">Elegir este plan</a>
         </article>
         <article class="pricing-card featured animate" data-delay="80">
-          <div class="pill">Mas vendido</div>
+          <p class="card-label featured-label">Mas vendido</p>
           <h3><i class="fas fa-briefcase"></i> Web profesional</h3>
           <p class="price">Desde &#36;5000 MXN</p>
           <p class="desc">Para empresas que buscan posicionarse y captar leads.</p>
@@ -164,9 +126,10 @@
             <li><i class="fas fa-chart-line"></i> Anal&iacute;tica y eventos</li>
             <li><i class="fas fa-server"></i> Hosting y dominio 1 a&ntilde;o</li>
           </ul>
+          <a href="https://wa.me/526641649998?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20plan%20Web%20profesional" class="btn primary full" target="_blank" rel="noopener">Elegir este plan</a>
         </article>
         <article class="pricing-card animate" data-delay="120">
-          <div class="pill muted">Complementos</div>
+          <p class="card-label">Complementos</p>
           <h3><i class="fas fa-plus-circle"></i> Extras</h3>
           <p class="price">Personalizado</p>
           <p class="desc">Funciones avanzadas seg&uacute;n tus necesidades.</p>
@@ -175,19 +138,20 @@
             <li><i class="fas fa-cogs"></i> Integraciones y automatizaci&oacute;n</li>
             <li><i class="fas fa-envelope-open-text"></i> Correos adicionales</li>
           </ul>
+          <a href="https://wa.me/526641649998?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20Extras" class="btn ghost full" target="_blank" rel="noopener">Cotizar extras</a>
         </article>
       </div>
     </div>
   </section>
 
-  <section id="contacto" class="section contact section-full">
-    <div class="container contact-grid">
-      <div class="animate">
+<section id="contacto" class="section contact">
+    <div class="container contact-inner">
+      <div class="animate visible">
         <p class="eyebrow">Contacto</p>
-        <h2>&iquest;Listo para tu nuevo sitio?</h2>
-        <p class="lead">Agenda una llamada y recibes un plan de acci&oacute;n en 48h con costos claros.</p>
+        <h2>¿Listo para tu nuevo sitio?</h2>
+        <p class="lead">Agenda una llamada y recibes un plan de acción en 48h con costos claros.</p>
       </div>
-      <div class="contact-actions animate" data-delay="80">
+      <div class="contact-actions animate visible" data-delay="80">
         <a href="https://wa.me/526641649998" class="btn primary" target="_blank" rel="noopener">
           <i class="fab fa-whatsapp"></i> Hablar por WhatsApp
         </a>
@@ -195,18 +159,16 @@
       </div>
     </div>
   </section>
-
+  
   <footer class="footer" role="contentinfo">
     <div class="container footer-grid">
       <div>
         <p class="eyebrow">SolveTech</p>
-        <p class="muted">Desarrollo web profesional, hosting y marketing de rendimiento.</p>
+        <p class="muted">Desarrollo web profesional, hosting y marketing de rendimiento para negocios que quieren vender mas en linea.</p>
+        <div class="social-links" style="margin-top: 16px;">
+          <a href="https://www.facebook.com/profile.php?id=61574623443688" target="_blank" rel="noopener" aria-label="Facebook de SolveTech"><i class="fab fa-facebook"></i></a>
+        </div>
       </div>
-      <div class="social-links">
-        <a href="https://www.facebook.com/profile.php?id=61574623443688" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
-      </div>
-    </div>
-    <p class="copy">&copy; 2025 Todos los derechos reservados, SolveTech</p>
   </footer>
 
   <script>
@@ -229,18 +191,32 @@
     });
 
     const animated = document.querySelectorAll('.animate');
-    const observer = new IntersectionObserver(entries => {
+    const revealObserver = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           const el = entry.target;
           const delay = el.dataset.delay ? Number(el.dataset.delay) : 0;
           setTimeout(() => el.classList.add('visible'), delay);
-          observer.unobserve(el);
+          revealObserver.unobserve(el);
         }
       });
     }, { threshold: 0.18 });
 
-    animated.forEach(el => observer.observe(el));
+    animated.forEach(el => revealObserver.observe(el));
+
+    const sectionLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+    const sections = document.querySelectorAll('section[id]');
+    const navObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          sectionLinks.forEach(link => {
+            link.classList.toggle('active', link.getAttribute('href') === `#${entry.target.id}`);
+          });
+        }
+      });
+    }, { rootMargin: '-45% 0px -45% 0px' });
+
+    sections.forEach(section => navObserver.observe(section));
   </script>
 </body>
 </html>

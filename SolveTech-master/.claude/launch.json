@@ -2,10 +2,10 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "solvetech-static",
+      "name": "solvetech",
       "runtimeExecutable": "python",
-      "runtimeArgs": ["-m", "http.server", "8991", "--directory", "C:\\Users\\angel\\Downloads\\SolveTech-master\\SolveTech-master"],
-      "port": 8991
+      "runtimeArgs": ["-m", "http.server", "8990", "--directory", "C:\\Users\\angel\\Downloads\\SolveTech-master"],
+      "port": 8990
     }
   ]
 }

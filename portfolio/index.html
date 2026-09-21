@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ángel Arellano</title>
-<meta name="description" content="Ángel Arellano — Software Engineer en Tijuana. Fundador de SolveTech.">
+<meta name="description" content="Ángel Arellano — Ingeniero de Software en Tijuana, México. Fundador de SolveTech.">
 <link rel="icon" href="../LogoTransparentecClaro.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +12,10 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+<div class="work-preview" id="workPreview" aria-hidden="true"><img id="workPreviewImg" alt=""></div>
 
 <nav class="nav" id="nav">
   <div class="nav-inner">
@@ -29,14 +33,17 @@
 </nav>
 
 <header class="hero" id="top">
-  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="hero-grid" id="heroGrid" aria-hidden="true"></div>
   <div class="hero-inner">
-    <p class="mono eyebrow reveal">Tijuana, MX — Software Engineer</p>
-    <h1 class="hero-title reveal">Ángel<br>Arellano.</h1>
-    <p class="hero-sub reveal">Fundé SolveTech. Diseño y construyo los sitios de negocios reales en Baja California — sin plantillas.</p>
+    <p class="mono eyebrow reveal">Tijuana, México — Software Engineer</p>
+    <h1 class="hero-title" aria-label="Ángel Arellano.">
+      <span class="line"><span class="letter" style="--i:0">Á</span><span class="letter" style="--i:1">n</span><span class="letter" style="--i:2">g</span><span class="letter" style="--i:3">e</span><span class="letter" style="--i:4">l</span></span>
+      <span class="line"><span class="letter" style="--i:5">A</span><span class="letter" style="--i:6">r</span><span class="letter" style="--i:7">e</span><span class="letter" style="--i:8">l</span><span class="letter" style="--i:9">l</span><span class="letter" style="--i:10">a</span><span class="letter" style="--i:11">n</span><span class="letter" style="--i:12">o</span><span class="letter" style="--i:13">.</span></span>
+    </h1>
+    <p class="hero-sub reveal">Fundador de SolveTech. Diseño y desarrollo sitios y sistemas para negocios en Baja California.</p>
     <div class="hero-actions reveal">
-      <a href="#work" class="btn btn-solid">Ver trabajo</a>
-      <a href="#contact" class="btn btn-line">Contacto</a>
+      <a href="#work" class="btn btn-solid" data-magnetic>Ver trabajo</a>
+      <a href="#contact" class="btn btn-line" data-magnetic>Contacto</a>
     </div>
   </div>
 </header>
@@ -45,14 +52,14 @@
 
   <section class="section section-light" id="about">
     <div class="section-inner about-grid">
-      <div class="reveal">
-        <p class="mono section-eyebrow">01 — Info</p>
-        <h2>Nada de esto es hipotético.</h2>
+      <div>
+        <p class="mono section-eyebrow reveal">01 — Info</p>
+        <h2 class="reveal">Enfoque práctico, resultados concretos.</h2>
       </div>
-      <div class="about-copy reveal">
-        <p class="lead">18 años, en Tijuana. Empecé construyendo sitios para negocios que conocía — grúas, seguridad, servicios — y de ahí salió SolveTech, la agencia que dirijo hoy.</p>
-        <p class="lead">Me interesa el código que se pone en producción y se usa, no el que solo se ve bien en un mockup.</p>
-        <dl class="facts">
+      <div class="about-copy">
+        <p class="lead reveal">Con sede en Tijuana, Baja California, inicié desarrollando sitios web para negocios locales — grúas, seguridad electrónica, servicios generales — lo que dio origen a SolveTech, la agencia que dirijo actualmente.</p>
+        <p class="lead reveal">Mi interés está en el desarrollo de software que se implementa y utiliza en producción, no únicamente en el diseño visual de una maqueta.</p>
+        <dl class="facts reveal">
           <div class="facts-row"><dt>Base</dt><dd>Tijuana, Baja California</dd></div>
           <div class="facts-row"><dt>Empresa</dt><dd>SolveTech</dd></div>
           <div class="facts-row"><dt>Enfoque</dt><dd>Desarrollo web, sistemas, marketing digital</dd></div>
@@ -64,44 +71,44 @@
   <section class="section" id="work">
     <div class="section-inner">
       <p class="mono section-eyebrow reveal">02 — Trabajo</p>
-      <h2 class="reveal">Sitios que he construido.</h2>
+      <h2 class="reveal">Proyectos desarrollados.</h2>
 
       <ul class="work-list">
 
-        <li class="work-row reveal">
+        <li class="work-row reveal" data-magnetic-row>
           <span class="work-idx mono">01</span>
           <div class="work-main">
             <h3><a href="https://solvetech.mx" target="_blank" rel="noopener">SolveTech <span class="arrow">↗</span></a></h3>
-            <p>Agencia de desarrollo web y marketing digital. La empresa que fundé.</p>
+            <p>Agencia de desarrollo web y marketing digital. Empresa fundada y dirigida por mí.</p>
           </div>
           <a href="https://solvetech.mx" target="_blank" rel="noopener" class="work-thumb">
             <img src="assets/images/solvetech.jpg" alt="SolveTech" loading="lazy">
           </a>
         </li>
 
-        <li class="work-row reveal">
+        <li class="work-row reveal" data-magnetic-row>
           <span class="work-idx mono">02</span>
           <div class="work-main">
             <h3><a href="https://gruashigareda.com" target="_blank" rel="noopener">Grúas Higareda <span class="arrow">↗</span></a></h3>
-            <p>Asistencia vial y remolque 24/7 en Baja California.</p>
+            <p>Servicio de asistencia vial y remolque disponible las 24 horas en Baja California.</p>
           </div>
           <a href="https://gruashigareda.com" target="_blank" rel="noopener" class="work-thumb">
             <img src="assets/images/higareda.jpg" alt="Grúas Higareda" loading="lazy">
           </a>
         </li>
 
-        <li class="work-row reveal">
+        <li class="work-row reveal" data-magnetic-row>
           <span class="work-idx mono">03</span>
           <div class="work-main">
             <h3><a href="https://sysitseguridad.com.mx" target="_blank" rel="noopener">SysIT Luna Security <span class="arrow">↗</span></a></h3>
-            <p>Seguridad electrónica: videovigilancia, alarmas y control de acceso en Tijuana.</p>
+            <p>Empresa de seguridad electrónica: videovigilancia, alarmas y control de acceso en Tijuana.</p>
           </div>
           <a href="https://sysitseguridad.com.mx" target="_blank" rel="noopener" class="work-thumb">
             <img src="assets/images/sysit.jpg" alt="SysIT Luna Security" loading="lazy">
           </a>
         </li>
 
-        <li class="work-row reveal">
+        <li class="work-row reveal" data-magnetic-row>
           <span class="work-idx mono">04</span>
           <div class="work-main">
             <h3>TSI · Tecnología Sistemas Industriales</h3>
@@ -112,11 +119,11 @@
           </span>
         </li>
 
-        <li class="work-row reveal">
+        <li class="work-row reveal" data-magnetic-row>
           <span class="work-idx mono">05</span>
           <div class="work-main">
             <h3><a href="https://gruaschuyin.com.mx" target="_blank" rel="noopener">Grúas Chuyín <span class="arrow">↗</span></a></h3>
-            <p>Grúa 24 horas en Tijuana: remolque y compra de autos dañados.</p>
+            <p>Servicio de grúa disponible las 24 horas en Tijuana, con opción de compra de vehículos dañados.</p>
           </div>
           <a href="https://gruaschuyin.com.mx" target="_blank" rel="noopener" class="work-thumb">
             <img src="assets/images/chuyin.jpg" alt="Grúas Chuyín" loading="lazy">
@@ -130,26 +137,18 @@
   <section class="section section-light" id="stack">
     <div class="section-inner">
       <p class="mono section-eyebrow reveal">03 — Stack</p>
-      <h2 class="reveal">Con qué trabajo.</h2>
-      <div class="tags reveal">
-        <span class="tag">HTML5</span>
-        <span class="tag">CSS3</span>
-        <span class="tag">JavaScript</span>
-        <span class="tag">Node.js</span>
-        <span class="tag">APIs REST</span>
-        <span class="tag">SQL / NoSQL</span>
-        <span class="tag">Git</span>
-        <span class="tag">SEO técnico</span>
-        <span class="tag">UI/UX</span>
-        <span class="tag">Hosting &amp; despliegue</span>
-      </div>
+      <h2 class="reveal">Tecnologías y herramientas.</h2>
+      <p class="stack-list mono reveal">
+        <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Node.js</span><span>APIs REST</span><span>SQL / NoSQL</span><span>Git</span><span>SEO técnico</span><span>UI/UX</span><span>Hosting y despliegue</span>
+      </p>
     </div>
   </section>
 
   <section class="section" id="contact">
     <div class="section-inner">
       <p class="mono section-eyebrow reveal">04 — Contacto</p>
-      <h2 class="reveal">Escríbeme.</h2>
+      <h2 class="reveal">Contacto.</h2>
+      <p class="lead reveal">Disponible para proyectos de desarrollo web y consultoría técnica.</p>
       <ul class="contact-list">
         <li class="reveal">
           <a href="mailto:angelarmandoarellanog@gmail.com">

@@ -461,7 +461,7 @@ h2 {
   font-size: 0.92rem;
   color: var(--muted-on-black);
   line-height: 1.5;
-  max-width: 480px;
+  max-width: 620px;
 }
 
 .work-thumb {
@@ -484,16 +484,61 @@ h2 {
 
 .work-row:hover .work-thumb img { filter: grayscale(0) contrast(1); }
 
-.work-thumb-static { cursor: default; }
-
 body.has-fine-pointer .work-thumb img { transition: filter 300ms var(--ease-out), opacity 300ms var(--ease-out); }
 
 body.has-fine-pointer .work-row:hover .work-thumb img { opacity: 0.35; }
 
 /* ---------- Stack ---------- */
 
+.stack-label {
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted-on-white);
+  margin: 40px 0 16px;
+}
+
+.stack-label:first-of-type { margin-top: 32px; }
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  border-top: 1px solid var(--line-on-white);
+  border-left: 1px solid var(--line-on-white);
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 28px 12px;
+  border-right: 1px solid var(--line-on-white);
+  border-bottom: 1px solid var(--line-on-white);
+  transition: background 250ms var(--ease-out);
+}
+
+.tech-item:hover { background: rgba(0, 0, 0, 0.04); }
+
+.tech-item svg {
+  width: 28px;
+  height: 28px;
+  fill: currentColor;
+  transition: transform 300ms var(--ease-spring);
+}
+
+.tech-item:hover svg { transform: scale(1.15); }
+
+.tech-item span {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.72rem;
+  text-align: center;
+  color: var(--muted-on-white);
+}
+
 .stack-list {
-  margin: 32px 0 0;
+  margin: 0;
   font-size: 1.05rem;
   line-height: 2;
   max-width: 720px;
